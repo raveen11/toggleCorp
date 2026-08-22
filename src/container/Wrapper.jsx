@@ -1,15 +1,12 @@
-import React, { useState, useEffect } from "react";
-import Column from "../components/Column";
-import TaskManager from "../components/TaskManager";
-import { useTaskManager } from "../hooks/useTaskManager";
+import React from "react";
 import { TaskManagerProvider } from "../context/TaskManagerContext";
+import ReactFlow from "../components/ReactFlow/ReactFlow";
 
 const Wrapper = () => {
   return (
     <TaskManagerProvider>
-      <div className="wrapper" style={{ marginTop: "15px" }}>
-        <TaskManager />
-        <Column />
+      <div className="wrapper">
+        <ReactFlow />
       </div>
     </TaskManagerProvider>
   );
